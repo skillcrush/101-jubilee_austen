@@ -159,6 +159,22 @@ header h2 span {
     color: #2b2b2b;
 }
 
+/****** ABOUT ******/
+
+#about .col-12 {
+    padding: 80px 0;
+}
+
+#about h2 {
+    font-family: 'Lora', serif;
+    font-size: 36px;
+}
+#about p {
+    padding-right: 50px;
+    font-size: 21px;
+    color: #7f7f7f;
+    line-height: 42px;
+}
 
 /* ==========================================================================
    Helper classes
