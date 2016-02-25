@@ -120,6 +120,44 @@ body {
     float: left;
 }
 
+/****** HEADER ******/
+
+header {
+    height: 800px;
+    background: url('../img/hero.png');
+    background-size: cover;
+}
+
+header h1 { 
+    font-family: 'Lora', serif;
+    font-size: 30px;
+    color: #bbc085;
+    padding: 50px 0;
+}
+nav {
+    float: right; 
+    width: 450px;
+    padding: 80px 0;
+}
+nav a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #828282;
+    padding-left: 80px;
+    font-size: 18px;
+}
+header h2 {
+    width: 1024px;
+    clear: both;
+    font-family: 'Lora', serif;
+    font-size: 72px;
+    line-height: 80px;
+    color: #9b9b9b;
+    padding: 20px 0;
+}
+header h2 span {
+    color: #2b2b2b;
+}
 
 
 /* ==========================================================================
