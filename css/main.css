@@ -97,6 +97,28 @@ textarea {
 
 /****** BASE STYLES (Foundational styles - body font, section width/height) ******/
 
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+#about, #work, #contact {
+    height: 600px;
+}
+
+/****** GRID ******/
+
+.col-12 {
+    width: 1200px;
+    margin: 0 auto;
+}
+.col-6 {
+    width: 600px;
+    float: left;
+}
+.col-3 {
+    width: 400px;
+    float: left;
+}
 
 
 
