@@ -207,6 +207,54 @@ header h2 span {
     color: #2b2b2b;
 }
 
+/****** CONTACT ******/
+
+#contact {
+    background-color: #ebebeb;
+}
+#contact .col-12 {
+    padding: 110px 0;
+}
+#contact img {
+    border: 12px solid #ffffff;
+}
+#contact h2, #contact #email-header, #contact #socialmedia-header, #contact ul, #contact .fa-envelope {
+    padding-left: 80px;
+}
+#contact h2 {
+    font-family: 'Lora', serif;
+    font-size: 36px;
+}
+#contact #email-header{
+    font-size: 32px;
+    font-weight: 400;
+    margin: -30px 0 5px 0;
+}
+#contact #socialmedia-header {
+    font-weight: bold;
+    font-size: 29px;
+    margin: 40px 0 0px 0;
+}
+#contact a, #contact i {
+    text-decoration: none;
+    color: #c49075;
+    font-weight: bold;
+    font-size: 28px;
+}
+#contact .fa-envelope {
+    padding-right: 15px;
+}
+#contact ul {
+    list-style: none;
+}
+#contact ul li {
+     display: inline-block;
+}
+#contact ul i {
+    font-size: 32px;
+    padding-right: 56px;
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
