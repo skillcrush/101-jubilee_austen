@@ -176,6 +176,37 @@ header h2 span {
     line-height: 42px;
 }
 
+/****** WORK ******/
+
+#work {
+    background-color: #f9ceb7;
+    text-align: center;
+}
+
+#work .col-12 {
+    padding: 115px 0;
+}
+
+#work i {
+    color: #c49075;
+    font-size: 94px;
+    padding-bottom: 30px;
+}
+
+#work h3 {
+    font-size: 24px;
+    width: 190px;
+    margin: 0 auto;
+}
+
+#work p {
+    font-family: 'Lora', serif;
+    font-size: 18px;
+    line-height: 30px;
+    padding: 0 35px;
+    color: #2b2b2b;
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
