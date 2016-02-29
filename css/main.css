@@ -136,10 +136,14 @@ header h1 {
 }
 nav {
     float: right; 
-    width: 450px;
-    padding: 80px 0;
+    width: 500px;
+    padding: 75px 0;
 }
-nav a {
+nav ul li{
+    list-decoration:none;
+    display: inline-block;
+}
+nav ul li a {
     text-transform: uppercase;
     text-decoration: none;
     color: #828282;
