@@ -107,15 +107,15 @@ body {
 
 /****** GRID ******/
 
-.col-12 {
+.full-width {
     width: 1200px;
     margin: 0 auto;
 }
-.col-6 {
+.half-width {
     width: 600px;
     float: left;
 }
-.col-3 {
+.third-width {
     width: 400px;
     float: left;
 }
@@ -165,7 +165,7 @@ header h2 span {
 
 /****** ABOUT ******/
 
-#about .col-12 {
+#about .full-width {
     padding: 80px 0;
 }
 
@@ -187,13 +187,11 @@ header h2 span {
     text-align: center;
 }
 
-#work .col-12 {
+#work .full-width {
     padding: 115px 0;
 }
 
-#work i {
-    color: #c49075;
-    font-size: 94px;
+#work img {
     padding-bottom: 30px;
 }
 
@@ -216,14 +214,17 @@ header h2 span {
 #contact {
     background-color: #ebebeb;
 }
-#contact .col-12 {
+#contact .full-width {
     padding: 110px 0;
 }
-#contact img {
+#contact img#contact-img {
     border: 12px solid #ffffff;
 }
-#contact h2, #contact #email-header, #contact #socialmedia-header, #contact ul, #contact .fa-envelope {
+#contact h2, #contact #email-header, #contact #socialmedia-header, #contact ul {
     padding-left: 80px;
+}
+#contact #envelope {
+    padding: 0 10px 0 80px;
 }
 #contact h2 {
     font-family: 'Lora', serif;
@@ -239,7 +240,7 @@ header h2 span {
     font-size: 29px;
     margin: 40px 0 0px 0;
 }
-#contact a, #contact i {
+#contact a {
     text-decoration: none;
     color: #c49075;
     font-weight: bold;
@@ -254,7 +255,7 @@ header h2 span {
 #contact ul li {
      display: inline-block;
 }
-#contact ul i {
+#contact ul img {
     font-size: 32px;
     padding-right: 56px;
 }
