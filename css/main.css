@@ -1,101 +1,4 @@
-/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
-
-/*
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
-
-/* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
-
-html {
-    color: #222;
-    font-size: 1em;
-    line-height: 1.4;
-}
-
-/*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * These selection rule sets have to be separate.
- * Customize the background color to match your design.
- */
-
-::-moz-selection {
-    background: #b3d4fc;
-    text-shadow: none;
-}
-
-::selection {
-    background: #b3d4fc;
-    text-shadow: none;
-}
-
-/*
- * A better looking default horizontal rule
- */
-
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
-}
-
-/*
- * Remove the gap between audio, canvas, iframes,
- * images, videos and the bottom of their containers:
- * https://github.com/h5bp/html5-boilerplate/issues/440
- */
-
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
-    vertical-align: middle;
-}
-
-/*
- * Remove default fieldset styles.
- */
-
-fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
-}
-
-/*
- * Allow only vertical resizing of textareas.
- */
-
-textarea {
-    resize: vertical;
-}
-
-/* ==========================================================================
-   Browser Upgrade Prompt
-   ========================================================================== */
-
-.browserupgrade {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
-}
-
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-
-/****** BASE STYLES (Foundational styles - body font, section width/height) ******/
+/****** BASE STYLES ******/
 
 body {
     font-family: 'Source Sans Pro', sans-serif;
@@ -107,15 +10,15 @@ body {
 
 /****** GRID ******/
 
-.col-12 {
+.full-width {
     width: 1200px;
     margin: 0 auto;
 }
-.col-6 {
+.half-width {
     width: 600px;
     float: left;
 }
-.col-3 {
+.third-width {
     width: 400px;
     float: left;
 }
@@ -136,18 +39,20 @@ header h1 {
 }
 nav {
     float: right; 
-    width: 450px;
-    padding: 80px 0;
+    padding: 75px 40px;
 }
-nav a {
+nav ul li{
+    display: inline-block;
+}
+nav ul li a {
     text-transform: uppercase;
     text-decoration: none;
-    color: #828282;
-    padding-left: 80px;
     font-size: 18px;
+    color: #828282;
+    padding-left: 80px; 
 }
 header h2 {
-    width: 1024px;
+    width: 1000px;
     clear: both;
     font-family: 'Lora', serif;
     font-size: 72px;
@@ -161,7 +66,7 @@ header h2 span {
 
 /****** ABOUT ******/
 
-#about .col-12 {
+#about .full-width {
     padding: 80px 0;
 }
 
@@ -170,10 +75,10 @@ header h2 span {
     font-size: 36px;
 }
 #about p {
-    padding-right: 50px;
     font-size: 21px;
     color: #7f7f7f;
     line-height: 42px;
+    padding-right: 50px;
 }
 
 /****** WORK ******/
@@ -183,13 +88,11 @@ header h2 span {
     text-align: center;
 }
 
-#work .col-12 {
+#work .full-width {
     padding: 115px 0;
 }
 
-#work i {
-    color: #c49075;
-    font-size: 94px;
+#work img {
     padding-bottom: 30px;
 }
 
@@ -203,8 +106,8 @@ header h2 span {
     font-family: 'Lora', serif;
     font-size: 18px;
     line-height: 30px;
-    padding: 0 35px;
     color: #2b2b2b;
+    padding: 0 35px;
 }
 
 /****** CONTACT ******/
@@ -212,14 +115,17 @@ header h2 span {
 #contact {
     background-color: #ebebeb;
 }
-#contact .col-12 {
+#contact .full-width {
     padding: 110px 0;
 }
-#contact img {
+#contact img#contact-img {
     border: 12px solid #ffffff;
 }
-#contact h2, #contact #email-header, #contact #socialmedia-header, #contact ul, #contact .fa-envelope {
-    padding-left: 80px;
+#contact h2, #contact #email-header, #contact #socialmedia-header, #contact ul {
+    padding-left: 115px;
+}
+#contact #envelope {
+    padding: 0 10px 0 115px;
 }
 #contact h2 {
     font-family: 'Lora', serif;
@@ -235,7 +141,7 @@ header h2 span {
     font-size: 29px;
     margin: 40px 0 0px 0;
 }
-#contact a, #contact i {
+#contact a {
     text-decoration: none;
     color: #c49075;
     font-weight: bold;
@@ -250,177 +156,8 @@ header h2 span {
 #contact ul li {
      display: inline-block;
 }
-#contact ul i {
+#contact ul img {
     font-size: 32px;
-    padding-right: 56px;
+    padding-right: 48px;
 }
 
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-/*
- * Hide visually and from screen readers
- */
-
-.hidden {
-    display: none !important;
-}
-
-/*
- * Hide only visually, but have it available for screen readers:
- * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
- */
-
-.visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-}
-
-/*
- * Extends the .visuallyhidden class to allow the element
- * to be focusable when navigated to via the keyboard:
- * https://www.drupal.org/node/897638
- */
-
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
-}
-
-/*
- * Hide visually and from screen readers, but maintain layout
- */
-
-.invisible {
-    visibility: hidden;
-}
-
-/*
- * Clearfix: contain floats
- *
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    `contenteditable` attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that receive the `clearfix` class.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
-
-.clearfix:before,
-.clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
-}
-
-.clearfix:after {
-    clear: both;
-}
-
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
-
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
-}
-
-@media print,
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 1.25dppx),
-       (min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
-}
-
-/* ==========================================================================
-   Print styles.
-   Inlined to avoid the additional HTTP request:
-   http://www.phpied.com/delay-loading-your-print-css/
-   ========================================================================== */
-
-@media print {
-    *,
-    *:before,
-    *:after,
-    *:first-letter,
-    *:first-line {
-        background: transparent !important;
-        color: #000 !important; /* Black prints faster:
-                                   http://www.sanbeiji.com/archives/953 */
-        box-shadow: none !important;
-        text-shadow: none !important;
-    }
-
-    a,
-    a:visited {
-        text-decoration: underline;
-    }
-
-    a[href]:after {
-        content: " (" attr(href) ")";
-    }
-
-    abbr[title]:after {
-        content: " (" attr(title) ")";
-    }
-
-    /*
-     * Don't show links that are fragment identifiers,
-     * or use the `javascript:` pseudo protocol
-     */
-
-    a[href^="#"]:after,
-    a[href^="javascript:"]:after {
-        content: "";
-    }
-
-    pre,
-    blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
-    }
-
-    /*
-     * Printing Tables:
-     * http://css-discuss.incutio.com/wiki/Printing_Tables
-     */
-
-    thead {
-        display: table-header-group;
-    }
-
-    tr,
-    img {
-        page-break-inside: avoid;
-    }
-
-    img {
-        max-width: 100% !important;
-    }
-
-    p,
-    h2,
-    h3 {
-        orphans: 3;
-        widows: 3;
-    }
-
-    h2,
-    h3 {
-        page-break-after: avoid;
-    }
-}
