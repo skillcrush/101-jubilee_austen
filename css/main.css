@@ -32,7 +32,7 @@ header {
 }
 
 header h1 { 
-    font-family: 'Lora', serif;
+    /*font-family: 'Lora', serif;*/
     font-size: 30px;
     color: #bbc085;
     padding: 50px 0;
