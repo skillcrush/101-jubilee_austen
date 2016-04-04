@@ -32,7 +32,7 @@ header {
 }
 
 header h1 { 
-    /*font-family: 'Lora', serif;
+    font-family: 'Lora', serif;
     font-size: 30px;
     color: #bbc085;
     padding: 50px 0;
@@ -51,6 +51,8 @@ nav ul li a {
     color: #828282;
     padding-left: 80px; 
 }
+
+/*
 header h2 {
     width: 1000px;
     clear: both;
