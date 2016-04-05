@@ -52,7 +52,7 @@ nav ul li a {
     padding-left: 80px; 
 }
 
-/*
+
 header h2 {
     width: 1000px;
     clear: both;
@@ -65,9 +65,9 @@ header h2 {
 header h2 span {
     color: #2b2b2b;
 }
-*/
+
 /****** ABOUT ******/
-/*
+
 #about .full-width {
     padding: 80px 0;
 }
@@ -82,9 +82,9 @@ header h2 span {
     line-height: 42px;
     padding-right: 50px;
 }
-*/
+
 /****** WORK ******/
-/*
+
 #work {
     background-color: #f9ceb7;
     text-align: center;
@@ -111,7 +111,7 @@ header h2 span {
     color: #2b2b2b;
     padding: 0 35px;
 }
-*/
+
 /****** CONTACT ******/
 
 #contact {
