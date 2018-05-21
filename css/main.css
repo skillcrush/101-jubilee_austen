@@ -2,6 +2,7 @@
 
 body {
     font-family: 'Source Sans Pro', sans-serif;
+    color: #2b2b2b;
 }
 
 #about, #work, #contact {
@@ -32,11 +33,13 @@ body {
 #about h2 {
     font-family: 'Lora', serif;
     font-size: 36px;
+    padding-left: 50px;
 }
 #about p {
     font-size: 21px;
     color: #7f7f7f;
-    line-height: 42px;
+    line-height: 40px;
+    padding-left: 50px;
     padding-right: 50px;
 }
 
@@ -57,6 +60,7 @@ body {
 
 #work h3 {
     font-size: 24px;
+    line-height: 32px;
     width: 190px;
     margin: 0 auto;
 }
@@ -65,7 +69,5 @@ body {
     font-family: 'Lora', serif;
     font-size: 18px;
     line-height: 30px;
-    color: #2b2b2b;
-    padding: 0 35px;
+    padding: 0 50px;
 }
-
