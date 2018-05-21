@@ -2,6 +2,7 @@
 
 body {
     font-family: 'Source Sans Pro', sans-serif;
+    color: #2b2b2b;
 }
 
 #about, #work, #contact {
@@ -22,4 +23,3 @@ body {
     width: 400px;
     float: left;
 }
-
