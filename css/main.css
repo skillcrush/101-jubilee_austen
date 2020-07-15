@@ -10,7 +10,7 @@ body {
 .full-width {
     width: 1200px;
     margin: 0 auto;
-    overflow: auto
+    overflow: auto;
 }
 .half-width {
     width: 600px;
@@ -159,6 +159,5 @@ header h2 span {
      display: inline-block;
 }
 #contact ul img {
-    font-size: 32px;
     padding-right: 48px;
 }
