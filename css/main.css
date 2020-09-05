@@ -27,6 +27,7 @@ header {
     height: 800px;
     background: url('../img/hero.png');
     background-size: cover;
+    background-position: center;
 }
 
 header h1 {
