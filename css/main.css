@@ -25,7 +25,7 @@ body {
 
 header {
     height: 800px;
-    background: url('../img/hero.png');
+    background: url('../img/full-background.png');
     background-size: cover;
     background-position: center;
 }
